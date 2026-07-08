@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  /* Official BridgeCare palette from brand doc + logo */
+  --teal: #005191; /* deep blue — trust & healthcare (primary) */
+  --mint: #007faa; /* teal / calm healing */
+  --green: #4a9b2f; /* soft green — wellness & life */
+  --sand: #f4f8fb; /* clean light background */
+  --coral: #e53935; /* heart red accent from logo */
+  --charcoal: #14202b;
+  --background: #f4f8fb;
+  --foreground: #14202b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-teal: var(--teal);
+  --color-mint: var(--mint);
+  --color-green: var(--green);
+  --color-sand: var(--sand);
+  --color-coral: var(--coral);
+  --color-charcoal: var(--charcoal);
+  --font-sans: var(--font-plus-jakarta);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-plus-jakarta), system-ui, sans-serif;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--mint) 35%, white);
+}
