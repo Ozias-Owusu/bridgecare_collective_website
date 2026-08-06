@@ -47,10 +47,10 @@ export function Footer() {
           <ul className="space-y-2 text-sm text-charcoal/70">
             <li>
               <a
-                href="mailto:hello@bridgecare.collective"
+                href="mailto:bridgecarecollectivehq@gmail.com"
                 className="inline-flex items-center gap-2 hover:text-teal"
               >
-                <Mail className="h-4 w-4" /> hello@bridgecare.collective
+                <Mail className="h-4 w-4" /> bridgecarecollectivehq@gmail.com
               </a>
             </li>
             <li>

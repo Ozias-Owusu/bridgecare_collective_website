@@ -4,7 +4,7 @@ import { FormEvent, useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, MessageCircle, Send, MapPin } from "lucide-react";
 
-const CONTACT_EMAIL = "hello@bridgecare.collective";
+const CONTACT_EMAIL = "bridgecarecollectivehq@gmail.com";
 const WHATSAPP =
   "https://wa.me/15551234567?text=Hello%20BridgeCare%20Collective%20%E2%80%94%20I%27d%20like%20to%20learn%20more.";
 
