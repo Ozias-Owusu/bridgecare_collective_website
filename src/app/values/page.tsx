@@ -3,43 +3,43 @@
 import { motion } from "framer-motion";
 import {
   HeartHandshake,
-  BookOpenCheck,
+  MessageCircleHeart,
   ShieldCheck,
-  HeartPulse,
+  Stethoscope,
   UsersRound,
-  Accessibility,
+  BookOpenCheck,
 } from "lucide-react";
 
 const values = [
   {
-    icon: BookOpenCheck,
-    title: "Public health education",
-    body: "We turn complex medical topics into clear, shareable awareness so communities can know better and live better.",
+    icon: HeartHandshake,
+    title: "Relationship-centered care",
+    body: "We put the bond between healthcare workers and patients or clients first — dignity, listening, and mutual understanding.",
   },
   {
-    icon: HeartHandshake,
-    title: "Compassion",
-    body: "Every person deserves patient, judgment-free guidance — whether they are new to health topics or supporting a loved one.",
+    icon: MessageCircleHeart,
+    title: "Clear communication",
+    body: "Care fails when people talk past each other. We help both sides ask better questions and explain with compassion.",
+  },
+  {
+    icon: Stethoscope,
+    title: "Respect for professionals",
+    body: "Doctors, nurses, pharmacists, and caregivers deserve tools that help the public understand their guidance — not replace them.",
   },
   {
     icon: ShieldCheck,
     title: "Trust & accuracy",
-    body: "Information is verified before it is shared. We avoid fear-based messaging and encourage professional medical consultation.",
-  },
-  {
-    icon: HeartPulse,
-    title: "Prevention first",
-    body: "We focus on wellness, early warning signs, and preventive habits that help people act before a crisis.",
+    body: "Information that shapes care conversations must be verified. We avoid fear-based messaging and encourage professional consultation.",
   },
   {
     icon: UsersRound,
-    title: "Community impact",
-    body: "BridgeCare exists to bridge medical professionals and the public — building safer, healthier lifestyles together.",
+    title: "Compassion for patients & clients",
+    body: "Every person seeking care deserves judgment-free support — whether they are new to a condition or navigating complex decisions.",
   },
   {
-    icon: Accessibility,
-    title: "Accessibility of information",
-    body: "Clean language, visual clarity, and formats that work for students, parents, workers, caregivers, and health workers alike.",
+    icon: BookOpenCheck,
+    title: "Education that serves the relationship",
+    body: "Myths, prevention, and wellness content still matter — as support for stronger patient–provider conversations, not as the only focus.",
   },
 ];
 
@@ -58,9 +58,9 @@ export default function ValuesPage() {
           Who we are
         </h1>
         <p className="mt-4 text-lg text-charcoal/70">
-          BridgeCare Collective is a healthcare awareness community that bridges
-          the gap between medical professionals and the public through education,
-          prevention, wellness, and responsible healthcare advocacy.
+          BridgeCare Collective bridges the gap between healthcare workers and
+          the patients or clients they serve — so care is rooted in trust, clear
+          communication, and mutual respect.
         </p>
       </motion.div>
 
@@ -75,9 +75,10 @@ export default function ValuesPage() {
             Mission
           </p>
           <p className="mt-3 text-lg leading-relaxed text-charcoal">
-            To educate, empower, and guide communities toward healthier lives
-            through trusted healthcare awareness, preventive education, and
-            responsible medical advocacy.
+            To strengthen the relationship between healthcare professionals and
+            patients or clients through trusted guidance, clearer conversations,
+            and responsible healthcare advocacy — supported by education and
+            prevention.
           </p>
         </motion.article>
         <motion.article
@@ -91,9 +92,9 @@ export default function ValuesPage() {
             Vision
           </p>
           <p className="mt-3 text-lg leading-relaxed text-charcoal">
-            To become one of Ghana&apos;s most trusted digital healthcare
-            awareness communities — helping people make informed health decisions
-            and encouraging safer, healthier lifestyles.
+            To become one of Ghana&apos;s most trusted bridges between care
+            providers and the public — where people feel understood, and
+            healthcare workers feel supported in guiding healthier lives.
           </p>
         </motion.article>
       </div>
@@ -101,8 +102,8 @@ export default function ValuesPage() {
       <div className="mx-auto mb-10 max-w-2xl text-center">
         <h2 className="text-3xl font-bold text-charcoal">Our core values</h2>
         <p className="mt-3 text-charcoal/70">
-          Caring, professional, educational, trustworthy, modern, and
-          community-focused — that is the BridgeCare personality.
+          Caring, professional, and relationship-first — with education and
+          community awareness as supporting pillars.
         </p>
       </div>
 

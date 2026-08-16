@@ -18,8 +18,8 @@ export function Footer() {
             <span className="font-bold text-charcoal">BridgeCare Collective</span>
           </div>
           <p className="text-sm leading-relaxed text-charcoal/70">
-            Bridging health knowledge and community care — educating, empowering,
-            and guiding communities toward healthier lives.
+            Bridging healthcare workers and the patients or clients they serve —
+            so care is clearer, kinder, and built on trust.
           </p>
         </div>
         <div>

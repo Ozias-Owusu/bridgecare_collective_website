@@ -11,9 +11,9 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "BridgeCare Collective | Bridging Health Knowledge & Community Care",
+  title: "BridgeCare Collective | Bridging Healthcare Workers & Patients",
   description:
-    "A healthcare awareness community that educates, empowers, and guides people toward healthier lives through trusted information, prevention, and responsible medical advocacy.",
+    "BridgeCare Collective strengthens the relationship between healthcare workers and patients or clients through trusted guidance, clearer conversations, and responsible care advocacy.",
 };
 
 export default function RootLayout({

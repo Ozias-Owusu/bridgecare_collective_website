@@ -36,8 +36,9 @@ export default function ContactPage() {
           Contact BridgeCare
         </h1>
         <p className="mt-4 text-lg text-charcoal/70">
-          Reach the team by email or WhatsApp. We welcome patients, partners,
-          healthcare workers, NGOs, and curious learners.
+          Reach the team by email or WhatsApp. We welcome patients, clients,
+          healthcare workers, partners, and anyone building better care
+          relationships.
         </p>
       </motion.div>
 

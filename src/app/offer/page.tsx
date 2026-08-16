@@ -3,48 +3,48 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import {
-  BookOpenCheck,
+  HeartHandshake,
   MessagesSquare,
-  ShieldAlert,
-  HeartPulse,
+  Stethoscope,
+  BookOpenCheck,
   ArrowRight,
 } from "lucide-react";
 
 const offers = [
   {
-    icon: BookOpenCheck,
-    title: "Health education hub",
+    icon: HeartHandshake,
+    title: "Patient ↔ healthcare worker connection",
     points: [
-      "Trusted awareness content on wellness, prevention, and everyday care",
-      "Simple explanations that avoid overcrowded medical jargon",
-      "Shareable lessons designed for communities across Ghana",
+      "A clear bridge between people seeking care and trusted professionals",
+      "Space for guidance that respects both the patient’s voice and clinical expertise",
+      "Educational support — never a substitute for emergency or in-person care",
     ],
   },
   {
     icon: MessagesSquare,
-    title: "Ask & explore",
+    title: "Better care conversations",
     points: [
-      "Community questions with clarity-first answers",
-      "Myths exposed with evidence-informed guidance",
-      "Related reading and media that deepen understanding",
+      "Help patients prepare questions before appointments or chats",
+      "Help professionals explain conditions and next steps in plain language",
+      "Reduce fear and confusion that weaken trust in care relationships",
     ],
   },
   {
-    icon: ShieldAlert,
-    title: "Emergency warning signs",
+    icon: Stethoscope,
+    title: "Support for healthcare workers",
     points: [
-      "Know the signs that mean someone needs urgent help",
-      "Practical advice people can remember and share",
-      "Clear reminders to seek professional care — never replace it",
+      "Share accurate, community-friendly explanations patients can understand",
+      "Strengthen follow-through by making advice clearer and more human",
+      "Keep the professional as the trusted guide — BridgeCare amplifies, not replaces",
     ],
   },
   {
-    icon: HeartPulse,
-    title: "Wellness & prevention",
+    icon: BookOpenCheck,
+    title: "Supporting education & awareness",
     points: [
-      "Habits and tips that support healthier daily living",
-      "Doctor and nurse explain-style content for trust",
-      "Real stories that show why informed decisions matter",
+      "Myths, wellness tips, and warning signs that improve care conversations",
+      "Prevention content that helps people seek help earlier and ask better questions",
+      "Community stories that show why trust between patient and provider matters",
     ],
   },
 ];
@@ -64,9 +64,8 @@ export default function OfferPage() {
           What we offer
         </h1>
         <p className="mt-4 text-lg text-charcoal/70">
-          Health awareness that saves lives — education, prevention, and
-          community engagement built for young adults, parents, students,
-          workers, caregivers, and healthcare professionals.
+          Tools and content centered on the healthcare worker–patient
+          relationship — with education and prevention as supporting pillars.
         </p>
       </motion.div>
 
@@ -106,8 +105,9 @@ export default function OfferPage() {
           Our promise
         </p>
         <p className="mx-auto mt-3 max-w-2xl text-lg text-charcoal">
-          We verify information before posting, encourage professional medical
-          consultation, and stay consistent, trustworthy, and community-focused.
+          We protect trust on both sides of care: verify information, encourage
+          professional consultation, and keep the patient–provider relationship
+          at the center.
         </p>
       </div>
 
@@ -118,7 +118,7 @@ export default function OfferPage() {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 rounded-full bg-teal px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-teal/20"
         >
-          Open the learning app <ArrowRight className="h-4 w-4" />
+          Open the app <ArrowRight className="h-4 w-4" />
         </a>
         <Link
           href="/contact"
