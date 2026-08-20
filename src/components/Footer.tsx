@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Mail, MessageCircle } from "lucide-react";
+import { Mail, MessageCircle, Phone } from "lucide-react";
 
 export function Footer() {
   return (
@@ -55,7 +55,15 @@ export function Footer() {
             </li>
             <li>
               <a
-                href="https://wa.me/15551234567?text=Hello%20BridgeCare%20Collective"
+                href="tel:+233539288651"
+                className="inline-flex items-center gap-2 hover:text-teal"
+              >
+                <Phone className="h-4 w-4" /> +233 53 9288 651
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://wa.me/233539288651?text=Hello%20BridgeCare%20Collective"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 hover:text-teal"

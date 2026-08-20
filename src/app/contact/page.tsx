@@ -2,11 +2,13 @@
 
 import { FormEvent, useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, MessageCircle, Send, MapPin } from "lucide-react";
+import { Mail, MessageCircle, Phone, Send, MapPin } from "lucide-react";
 
 const CONTACT_EMAIL = "bridgecarecollectivehq@gmail.com";
+const CONTACT_PHONE_DISPLAY = "+233 53 9288 651";
+const CONTACT_PHONE_TEL = "+233539288651";
 const WHATSAPP =
-  "https://wa.me/15551234567?text=Hello%20BridgeCare%20Collective%20%E2%80%94%20I%27d%20like%20to%20learn%20more.";
+  "https://wa.me/233539288651?text=Hello%20BridgeCare%20Collective%20%E2%80%94%20I%27d%20like%20to%20learn%20more.";
 
 export default function ContactPage() {
   const [name, setName] = useState("");
@@ -36,8 +38,8 @@ export default function ContactPage() {
           Contact BridgeCare
         </h1>
         <p className="mt-4 text-lg text-charcoal/70">
-          Reach the team by email or WhatsApp. We welcome patients, clients,
-          healthcare workers, partners, and anyone building better care
+          Reach the team by email, phone, or WhatsApp. We welcome patients,
+          clients, healthcare workers, partners, and anyone building better care
           relationships.
         </p>
       </motion.div>
@@ -57,6 +59,18 @@ export default function ContactPage() {
             </div>
           </a>
           <a
+            href={`tel:${CONTACT_PHONE_TEL}`}
+            className="flex items-start gap-4 rounded-3xl border border-teal/10 bg-white p-5 shadow-sm transition hover:-translate-y-0.5"
+          >
+            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-teal text-white">
+              <Phone className="h-5 w-5" />
+            </span>
+            <div>
+              <p className="font-semibold text-charcoal">Contact line</p>
+              <p className="text-sm text-charcoal/70">{CONTACT_PHONE_DISPLAY}</p>
+            </div>
+          </a>
+          <a
             href={WHATSAPP}
             target="_blank"
             rel="noopener noreferrer"
@@ -67,9 +81,7 @@ export default function ContactPage() {
             </span>
             <div>
               <p className="font-semibold text-charcoal">WhatsApp</p>
-              <p className="text-sm text-charcoal/70">
-                Chat with the BridgeCare team
-              </p>
+              <p className="text-sm text-charcoal/70">{CONTACT_PHONE_DISPLAY}</p>
             </div>
           </a>
           <div className="flex items-start gap-4 rounded-3xl border border-teal/10 bg-sand p-5">
